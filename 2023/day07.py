@@ -11,7 +11,7 @@ def puzzle1(input):
         int_hand = np.array([order.index(a) for a in hand])
         pairs.append([int_hand, int(bid)])
 
-    s = bub_sort(pairs, compare_hands)
+    s = q_sort(pairs, compare_hands)
     result = 0
     for i in range(len(s)):
         result += s[i][1] * (i+1)
@@ -28,20 +28,20 @@ def puzzle2(input):
         int_hand = np.array([order.index(a) for a in hand])
         pairs.append([int_hand, int(bid)])
 
-    s = bub_sort(pairs, compare_hands_II)
+    s = q_sort(pairs, compare_hands_II)
     result = 0
     for i in range(len(s)):
         result += s[i][1] * (i+1)
     return result
 
-def bub_sort(l, c):
+def q_sort(l, c):
     if len(l) <= 1:
         return l
     p = l[0]
     smaller = list(filter(lambda x: c(x, p), l))
     equal = list(filter(lambda x: not c(p, x) and not c(x, p), l))
     bigger = list(filter(lambda x: c(p, x), l))
-    return bub_sort(smaller, c) + equal + bub_sort(bigger, c)
+    return q_sort(smaller, c) + equal + q_sort(bigger, c)
 
 def compare_hands(pair1, pair2):
     occurrences1 = np.bincount(pair1[0])
