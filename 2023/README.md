@@ -1,5 +1,25 @@
-```      --------Part 1--------   --------Part 2--------
+### There are my solutions to the advent of code 2023.
+
+They were all written by myself, mostly without any help, but here are some exceptions:
+- day 12 part 2: I used a solution from reddit to help me debug my optimizations (to find which examples are wrong), after succesfully debugging and still being too slow, I used a hint to use memoization.
+- Day 20 part 2: I used a hint to look into the configuration of output module inputs and use lcm.
+- Day 24 part 2: Had no idea how to solve a system of non-linear equations. Looked into solutions for hints and then used SymPy library, which feels like cheating.
+
+Usually I woke up at 6:00 and was coding until I succeded, with some exceptions:
+- Day 16 and 17: I had some other things in my life and was unable to solve in the short morning.
+- Day 18: Woke up later, as my roommate - my sister had master's exam (had to learn most of the important courses from 5 years of mathematics study) and she deserves an uninterrupted sleep.
+- Day 22: Too tired to wake up.
+- Day 23 part 2: Also other things in life, I was unable to finish optimizations for part 2 in the morning, but my computer was able to finish computing unoptimized solution in 10 hours.
+- Day 24 and 25: I had no time for subsidiary things, as I was prepairing for and celebrating the bith of the Redeemer. *"For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."* Isaiah 9:6
+
+
+Here are my times and ranks:
+
+```
+      --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 25       >24h  10651      0       >24h   7776      0
+ 24       >24h  13175      0       >24h   8998      0
  23   00:50:59   2070      0   14:54:06   7187      0
  22   03:33:04   3914      0   04:00:31   3443      0
  21   00:17:39   1785      0   17:16:26   7011      0
